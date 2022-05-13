@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import { Menus } from './Navi'
+import { Home } from './Home'
+import { NewONe } from './NewOne'
+import { Edit } from './Edit'
+import { Read } from './Read'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App=()=>{
+  return(
+  <>
+      <BrowserRouter>
+        <Menus/>
+        <Routes>
+          <Route path="/home" exact element={<Home/>}/>
+          <Route path="/new" exact element={<NewONe/>}/>
+          <Route path="/edit/:id" exact element={<Edit/>}/>
+          <Route path="/read/:id" exact element={<Read/>}/>
+        </Routes>
+      </BrowserRouter>
+  </>)
 }
 
 export default App;

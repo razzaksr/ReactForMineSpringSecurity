@@ -2,6 +2,11 @@ import axios from 'axios'
 
 const url="http://localhost:8080"
 
+export const connectLogin=async(object)=>{
+    const t = await axios.post(`${url}/auth/`,null,{headers:{'user':object.username,'pass':object.password}})
+    return t;
+}
+
 export const connectToAll=async()=>{
     const t = await axios.get(`${url}/`)
     return t;

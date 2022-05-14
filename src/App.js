@@ -6,10 +6,12 @@ import { Home } from './Home'
 import { NewONe } from './NewOne'
 import { Edit } from './Edit'
 import { Read } from './Read'
+import { Login } from './Login'
 
 const App=()=>{
   return(
   <>
+      <Login/>
       <BrowserRouter>
         <Menus/>
         <Routes>

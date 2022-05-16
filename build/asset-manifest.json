@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-spring-security/static/css/main.0bebb866.css",
+    "main.js": "/react-spring-security/static/js/main.14c8683c.js",
+    "static/media/bootstrap-icons.woff?": "/react-spring-security/static/media/bootstrap-icons.c1d7432ee75fa194e499.woff",
+    "static/media/bootstrap-icons.woff2?": "/react-spring-security/static/media/bootstrap-icons.a13b815539b49de48d23.woff2",
+    "index.html": "/react-spring-security/index.html",
+    "main.0bebb866.css.map": "/react-spring-security/static/css/main.0bebb866.css.map",
+    "main.14c8683c.js.map": "/react-spring-security/static/js/main.14c8683c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bebb866.css",
+    "static/js/main.14c8683c.js"
+  ]
+}
